@@ -5,7 +5,7 @@ namespace Phone.Web.Services.IServices
     /// <summary>
     /// all methods for performing CRUD operations with goods
     /// </summary>
-    public interface IGoodService
+    public interface IGoodService : IBaseService
     {
         Task<T> GetAllGoodsAsync<T>();
         Task<T> GetGoodByIdAsync<T>(int id);
